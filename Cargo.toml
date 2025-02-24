@@ -3,6 +3,9 @@ name = "netstat-rust"
 version = "0.1.2"
 authors = ["Ketan Kothari <ket000@gmail.com>"]
 edition = "2024"
+description = "Cross Platform netstat-rust program for windows/linux/mac"
+license = "MIT"
+repository = "https://github.com/ket000/netstat-rust"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
