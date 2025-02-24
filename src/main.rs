@@ -19,9 +19,7 @@ struct SocketInfo {
 
 fn main() {
     let mut sys = System::new_all();
-    // sys.refresh_processes(sysinfo::ProcessRefreshKind::everything(), sysinfo::RefreshKind::new());
-    //sys.refresh_processes(sysinfo::ProcessRefreshKind::everything(), true);
-      sys.refresh_processes(sysinfo::ProcessesToUpdate::All, true);
+    sys.refresh_processes(sysinfo::ProcessesToUpdate::All, true);
     
     let mut sockets = get_sockets(&sys, AddressFamilyFlags::IPV4);
     let mut sockets6 = get_sockets(&sys, AddressFamilyFlags::IPV6);
